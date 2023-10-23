@@ -2,6 +2,6 @@
 # pings an IP address 5 times
 if [ $# -eq 0 ]; then
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
-    exit
+    exit 1
 fi
 ping $1 -c 5
